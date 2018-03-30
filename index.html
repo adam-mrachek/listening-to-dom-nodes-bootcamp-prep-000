@@ -11,6 +11,7 @@
     </style>
     <script>
     const divs = document.querySelectorAll('div')
+<<<<<<< HEAD
 
     function bubble(e) {
       // stop! that! propagation!
@@ -19,6 +20,16 @@
       console.log(this.firstChild.nodeValue.trim() + ' bubbled')
     }
 
+=======
+     
+    function bubble(e) {
+      // stop! that! propagation!
+      e.stopPropagation()
+     
+      console.log(this.firstChild.nodeValue.trim() + ' bubbled')
+    }
+     
+>>>>>>> 036d88326504698d4738f34bdc1657944ac99ac6
     for (let i = 0; i < divs.length; i++) {
       divs[i].addEventListener('click', bubble)
     }
